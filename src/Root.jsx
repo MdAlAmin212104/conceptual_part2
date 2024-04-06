@@ -7,9 +7,6 @@ function Root() {
   return (
     <div className="2xl:container mx-auto">
       <NavBar />
-
-
-
       <Outlet />
       <Footer />
     </div>

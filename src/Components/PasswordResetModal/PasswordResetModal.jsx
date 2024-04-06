@@ -6,7 +6,7 @@ const PasswordResetModal = () => {
     const [email,setEmail] = useState('')
     const handleSubmit = () => { 
         resetPass(email)
-            .then(() => {
+            .then((res) => {
             console.log(res);
         })
     }

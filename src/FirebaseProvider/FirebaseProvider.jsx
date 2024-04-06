@@ -94,19 +94,19 @@ const FirebaseProvider = ({ children }) => {
     });
     return () => unsubscribe();
   }, []);
-
+  
   const allValues = {
+    user,
+    loading,
     createUser,
     signInUser,
     googleLogin,
     githubLogin,
     logout,
-    user,
     twitterLogin,
-      facebookLogin,
-      updateUserProfile,
-      loading,
-      resetPass
+    facebookLogin,
+    updateUserProfile,
+    resetPass
   };
   return (
     <AuthContext.Provider value={allValues}>{children}</AuthContext.Provider>
